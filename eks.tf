@@ -19,8 +19,7 @@ provider kubernetes {
 }
 
 module cluster {
-  source          = "terraform-aws-modules/eks/aws"
-  version         = ">= 1.13"
+  source          = "terraform-aws-modules/eks/aws?ref=13.0.0"
 
   cluster_name    = local.stack
   cluster_version = "1.16"
